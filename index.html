@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Player Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.0.1/Tone.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class='navbar navbar-dark bg-dark'>
+      <div class='navbar-brand'>
+        <button class='navbar-toggler btn btn-default' id='back'><i class="fas fa-fast-backward"></i></button>
+        <span id='playstop'>
+          <button class='navbar-toggler btn btn-default' id='toggle-start'><i class="fas fa-play" id='play-stop'></i></button>
+        </span>
+        <button class='navbar-toggler btn btn-default' id='forward'><i class="fas fa-fast-forward"></i></button>
+      </div>
+      <div class='mr-sm-2'>
+        <span class="navbar-text" id='now-playing'>
+        </span>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <h1 class="display-4">My Blog</h1>
+      <p class="lead">This is a simple music player application built with Tone and Express</p>
+      <hr class="my-4">
+      <p>To use this application:</p>
+      <ol>
+        <li>Clone the Repository from the link below</li>
+        <li>Drop your audio file into the <i>temp_audio</i> directory</li>
+        <li>Navigate to the server directory and run <i>node index.js</i> to start the server</li>
+        <li>Add the audio file name to sitePlayer.js and open index.html in your browser!</li>
+      </ol>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="sitePlayer.js" charset="utf-8"></script>
+  </body>
+</html>
